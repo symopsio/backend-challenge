@@ -37,8 +37,8 @@ echo "Checking msr exists"
 which msr
 test_exit "msr not found"
 
-echo "Testing subcommand help"
-msr help | test_output "[[:digit:]].[[:digit:]].[[:digit:]]" "is not a semver"
+echo "Testing subcommand version"
+msr version | test_output "[[:digit:]].[[:digit:]].[[:digit:]]" "is not a semver"
 
 echo "Testing register: invalid URL"
 msr register "http:bad"
