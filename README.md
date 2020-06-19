@@ -8,7 +8,7 @@ You've been tasked with putting together a CLI for your boss, Yusuf, which perfo
 
 ## Tests
 
-We have a bash script written ([`test.sh`](test.sh)), which you can run to test your implementation. Note that the tests should not take a long time to run. If your implementation takes more than 30 or so seconds, you should consider making some of your serial requests parallel.
+We have a bash script written ([`test.sh`](https://github.com/symopsio/backend-challenge/blob/master/test.sh)), which you can run to test your implementation. Note that the tests should not take a long time to run. If your implementation takes more than 30 or so seconds, you should consider making some of your serial requests parallel.
 
 ## Implementation
 
