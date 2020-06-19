@@ -4,11 +4,13 @@ Thanks for taking the time to check out our backend engineering challenge! Today
 
 ## Background
 
-You've been tasked with putting together a CLI for your boss, Yusuf, which performs various measurements on remote web pages. We'll call this CLI `msr`. There will be several subcommands to `msr`, each of which might take some arguments.
+You've been tasked with putting together a CLI that performs various measurements on remote web pages. We'll call this CLI `msr`. There will be several subcommands to `msr`, each of which might take some arguments.
 
 ## Tests
 
-We have a bash script written ([`test.sh`](https://github.com/symopsio/backend-challenge/blob/master/test.sh)), which you can run to test your implementation. Note that the tests should not take a long time to run. If your implementation takes more than 30 or so seconds, you should consider making some of your serial requests parallel.
+We've provided a script ([`test.sh`](https://github.com/symopsio/backend-challenge/blob/master/test.sh)) that you can run to test your implementation.
+
+Note that the tests should not take a long time to run. If your implementation takes more than 30 or so seconds, you should consider making some of your serial requests parallel.
 
 ## Implementation
 
