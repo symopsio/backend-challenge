@@ -2,6 +2,10 @@
 
 Thanks for taking the time to check out our backend engineering challenge! Today, you'll be building a command-line tool called `msr`. Please implement your CLI in Python, and ensure that, once installed (with a standard `pip install`), it can be called simply by typing `msr` at a shell prompt.
 
+## Expectations
+
+The coding project has a 3 hour time limit, but we've designed it to ideally be completable in 1-2 hours. We recommending solving the problems first and then cleaning up the code afterwards if you have time. Be pragmatic about it rather than trying to be perfect, at least on your first pass.
+
 ## Background
 
 You've been tasked with putting together a CLI that performs various measurements on remote web pages. We'll call this CLI `msr`. There will be several subcommands to `msr`, each of which might take some arguments.
@@ -26,15 +30,15 @@ Feel free to use a file to back this registry, although proper XDG conventions (
 
 ### Measure
 
-`msr measure` takes no arguments, and should return a pretty-printed table of all of the URLs in the registry, along with the size (in bytes) of the body received by making a GET request to that URL.
+`msr measure` takes no arguments, and should return a pretty-printed table of all of the URLs in the registry, along with the size (in bytes) of the body received by making a GET request to that URL. The implementation should follow redirects as necessary to get an actual content body.
 
 ### Race
 
 `msr race` takes no arguments, and should return a pretty-printed table of all the domains found in the URLs in the registry, along with the average page load time for the URLs of that domain.
 
-### Blast
+## One more thing...
 
-`test.sh` includes one last testing method that is intended to see how your implementation holds up when the registry has a bunch of URLs in it. `blast` will register all the URLs in the pre-seeded [`blast.txt`](blast.txt) file, and then calls `race`.
+Once you get everything else working, `test.sh` includes one last testing method that is intended to see how your implementation holds up when the registry has a bunch of URLs in it. `blast` registers all the URLs in the pre-seeded [`blast.txt`](blast.txt) file, and then calls `race`. How fast can you make this run?
 
 ## Submitting
 
