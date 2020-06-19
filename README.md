@@ -32,6 +32,10 @@ Feel free to use a file to back this registry, although proper XDG conventions (
 
 `msr race` takes no arguments, and should return a pretty-printed table of all the domains found in the URLs in the registry, along with the average page load time for the URLs of that domain.
 
+### Blast
+
+`test.sh` includes one last testing method that is intended to see how your implementation holds up when the registry has a bunch of URLs in it. `blast` will register all the URLs in the pre-seeded [`blast.txt`](blast.txt) file, and then calls `race`.
+
 ## Submitting
 
 You should have received an email from Sym with a link to upload your submission. If you haven't, please let us know!

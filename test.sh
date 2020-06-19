@@ -29,6 +29,17 @@ function test_panic {
   pass
 }
 
+function blast {
+  urls=$(cat blast.txt)
+  count=$(echo $urls | wc -w)
+  echo "Registering ${count} URLs"
+  for url in ${urls}; do
+    msr register ${url}
+  done
+  echo "Racing..."
+  msr race
+}
+
 echo "Installing module"
 pip install -e .
 test_exit "install failed"
@@ -53,3 +64,6 @@ msr measure | test_output "google" "is missing an entry"
 
 echo "Testing race"
 msr race | test_output "google" "is missing an entry"
+
+echo "Blasting..."
+blast
