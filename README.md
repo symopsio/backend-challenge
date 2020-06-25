@@ -4,7 +4,7 @@ Thanks for taking the time to check out our backend engineering challenge! Today
 
 ## Expectations
 
-The coding project has a 3 hour time limit, but we've designed it to ideally be completable in 1-2 hours. We recommending solving the problems first and then cleaning up the code afterwards if you have time. Be pragmatic about it rather than trying to be perfect, at least on your first pass.
+The project has a 3 hour time limit; we've designed it to be completable in 1-2 hours. It might be helpful to start by getting _something_ working, and then cleaning it up. Done is better than perfect for a first pass!
 
 ## Background
 
