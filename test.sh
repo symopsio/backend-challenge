@@ -62,8 +62,8 @@ test_exit "msr register failed"
 echo "Testing measure"
 msr measure | test_output "google" "is missing an entry"
 
-echo "Testing race"
-msr race | test_output "google" "is missing an entry"
+echo "Running race"
+msr race
 
 echo "Blasting..."
 blast
