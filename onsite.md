@@ -15,3 +15,13 @@ The output of the `crawl` command should be a summary table of the number of URL
 ## Rank
 
 `msr rank` should traverse the most recently-persisted `crawl` graph, run the [PageRank](https://en.wikipedia.org/wiki/PageRank) algorithm, and return the $N$ URLs with the highest PageRank. $N$ defaults to 5, can can be configured with the `-n` flag.
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      inlineMath: [['$','$']]
+    }
+  });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
