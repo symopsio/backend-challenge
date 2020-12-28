@@ -14,7 +14,7 @@ function pass {
 }
 
 function test_output {
-  read inp
+  inp=$(</dev/stdin)
   [[ "$inp" =~ $1 ]] || fail "$inp $2"
   pass
 }
@@ -66,4 +66,4 @@ echo "Running race"
 msr race
 
 echo "Blasting..."
-blast
+time blast
